@@ -1,0 +1,65 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1e1e1e;
+        color: #eeeeee;
+    }
+
+    header {
+        background-color: #292d35;
+
+        h1 {
+            color: #9fc1df;
+        }
+
+        p,
+        nav a {
+            color: #eeeeee;
+        }
+    }
+
+    section {
+        h2 {
+            color: #9fc1df;
+        }
+    }
+
+    #beranda {
+        background: linear-gradient(135deg, #293b45, #3b3036);
+
+        h2 {
+            color: #9fc1df;
+        }
+
+        figure {
+            img {
+                border-color: #292d35;
+            }
+
+            figcaption {
+                color: #bbb;
+            }
+        }
+    }
+
+    #tentang article,
+    #pendidikan,
+    #hobi,
+    aside,
+    form {
+        background-color: #292d35;
+        color: #eeeeee;
+    }
+
+    aside {
+        strong {
+            color: #9fc1df;
+        }
+    }
+
+    input,
+    textarea {
+        background-color: #333842;
+        color: white;
+        border-color: #555;
+    }
+}

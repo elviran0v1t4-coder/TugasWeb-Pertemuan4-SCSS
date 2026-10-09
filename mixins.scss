@@ -1,0 +1,29 @@
+@use "variables" as *;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card-style($border-color) {
+    background-color: $white;
+    padding: 25px;
+    border-radius: $radius-medium;
+    border: 2px solid $border-color;
+}
+
+@mixin button-style {
+    padding: 10px 22px;
+    background-color: $primary;
+    color: white;
+    border: none;
+    border-radius: $radius-large;
+    cursor: pointer;
+}
+
+@mixin responsive {
+    @media (max-width: 700px) {
+        @content;
+    }
+}

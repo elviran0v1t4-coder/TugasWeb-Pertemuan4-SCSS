@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+
+body {
+    font-family: $font-main;
+    background-color: $background;
+    color: $text;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    padding: 65px 20px;
+
+    h2 {
+        margin-bottom: 20px;
+        color: $primary;
+    }
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}

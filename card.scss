@@ -1,0 +1,59 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+$section-colors: (
+    tentang: $blue,
+    pendidikan: $yellow,
+    hobi: $green
+);
+
+#tentang article,
+#pendidikan,
+#hobi,
+aside {
+    @include card-style($blue);
+}
+
+@each $section, $color in $section-colors {
+    ##{$section} {
+        border-color: $color;
+    }
+}
+
+#tentang {
+    article {
+        h3 {
+            color: $primary;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+#pendidikan,
+#hobi {
+    ul {
+        margin-top: 15px;
+    }
+}
+
+aside {
+    margin: 0 20px 60px;
+    border-color: $purple;
+
+    h2 {
+        color: $primary;
+        margin-bottom: 15px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    strong {
+        color: $primary;
+    }
+}

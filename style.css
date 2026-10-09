@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff9fb;
+    color: #4b4b4b;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(
+        135deg,
+        #a8d8ea,
+        #c7e9d4,
+        #f4c2d7,
+        #f9e7a9
+    );
+    color: #3f5363;
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #526b78;
+    font-size: 17px;
+}
+
+/* NAVIGATION */
+
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    display: inline-block;
+    color: #435762;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    padding: 8px 14px;
+    margin: 4px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: #f4b6c2;
+    color: #5c4850;
+}
+
+/* MAIN */
+
+main {
+    width: 90%;
+    max-width: 950px;
+    margin: 35px auto;
+}
+
+/* SECTION */
+
+section,
+aside {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    border: 1px solid #f0e5e9;
+    box-shadow: 0 4px 12px rgba(150, 150, 150, 0.08);
+}
+
+/* WARNA ATAS SETIAP SECTION */
+
+section:nth-child(1) {
+    border-top: 5px solid #a8d8ea;
+}
+
+section:nth-child(2) {
+    border-top: 5px solid #f4b6c2;
+}
+
+section:nth-child(3) {
+    border-top: 5px solid #b8e0c2;
+}
+
+section:nth-child(4) {
+    border-top: 5px solid #d8c4e8;
+}
+
+/* JUDUL */
+
+h2 {
+    color: #557887;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #71947d;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* FOTO */
+
+figure {
+    text-align: center;
+    margin: 20px 0 25px;
+}
+
+figure img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 7px solid #f4b6c2;
+    padding: 4px;
+    background-color: #fff;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* LIST */
+
+ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+li {
+    background-color: #f7f3fa;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border-left: 4px solid #d8c4e8;
+}
+
+/* PENDIDIKAN */
+
+#pendidikan li {
+    background-color: #f0f8f3;
+    border-left-color: #b8e0c2;
+}
+
+/* HOBI */
+
+#hobi li {
+    background-color: #fff3f6;
+    border-left-color: #f4b6c2;
+}
+
+/* ASIDE */
+
+aside {
+    background-color: #fff9df;
+    border: none;
+    border-left: 6px solid #f9e7a9;
+}
+
+aside h2 {
+    color: #8c7a3f;
+}
+
+/* FORM */
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #62737c;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px 13px;
+    margin-bottom: 16px;
+    border: 1px solid #e0dfe5;
+    border-radius: 8px;
+    background-color: #fffafd;
+    color: #4b4b4b;
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #a8d8ea;
+    box-shadow: 0 0 0 3px rgba(168, 216, 234, 0.2);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* BUTTON */
+
+button {
+    background-color: #f4b6c2;
+    color: #5d4b50;
+    border: none;
+    padding: 11px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #f9e7a9;
+    color: #665d3d;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #c7e9d4;
+    color: #50665a;
+    text-align: center;
+    padding: 25px;
+    margin-top: 35px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 3px;
+        padding: 7px 11px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section,
+    aside {
+        padding: 22px;
+    }
+
+    figure img {
+        width: 160px;
+        height: 160px;
+    }
+}

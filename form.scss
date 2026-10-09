@@ -1,0 +1,28 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+form {
+    max-width: 650px;
+    margin-top: 20px;
+    @include card-style($blue);
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 11px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: $radius-small;
+        font-family: $font-main;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+}

@@ -1,0 +1,9 @@
+@use "../abstracts/mixins" as *;
+
+button {
+    @include button-style;
+
+    &:hover {
+        background-color: #40576a;
+    }
+}
